@@ -92,4 +92,4 @@ Reliability | in a failure scenario, the entire stack needs to be recovered. Als
 
 ### 
 
-## For Quizzes check [here](https://github.com/sg7801/SUSE-Cloud-Native-Foundations-Scholarship/blob/main/Introduction%20to%20Cloud%20Native%20Fundamentals/Quizzes.md) 
+## For Quizzes check [here](https://github.com/sg7801/SUSE-Cloud-Native-Foundations-Scholarship/blob/main/Architecture%20Consideration%20for%20Cloud%20Native%20Applications/Quizzes.md) 
