@@ -46,4 +46,50 @@
   - released using its own binary
 ![image](https://user-images.githubusercontent.com/61888364/124396992-a914a700-dd2a-11eb-913d-09dada7b2ec7.png)
 
-# For Quizzes check [here](https://github.com/sg7801/SUSE-Cloud-Native-Foundations-Scholarship/blob/main/Introduction%20to%20Cloud%20Native%20Fundamentals/Quizzes.md) 
+Trade-Off | Monolith | Microservices
+--- | --- | ---
+Development Complexity | one programming language, one repository, enables sequential development| multiple programming languages, multiple repositories, enables concurrent development
+Scalability | replication of the entire stack; hence it's heavy on resource consumption | replication of a single unit, providing on-demand consumption of resources 
+Time to Deploy | one delivery pipeline that deploys the entire stack; more risk with each deployment leading to a lower velocity rate | multiple delivery pipelines that deploy separate units; less risk with each deployment leading to a higher feature development rate
+Flexibility | low rate, since the entire application stack might need restructuring to incorporate new functionalities | high rate, since changing an independent unit is straightforward 
+Operational Cost | low initial cost, since one code base and one pipeline should be managed. However, the cost increases exponentially when the application needs to operate at scale | high initial cost, since multiple repositories and pipelines require management. However, at scale, the cost remains proportional to the consumed resources at that point in time.
+Reliability | in a failure scenario, the entire stack needs to be recovered. Also, the visibility into each functionality is low, since all the logs and metrics are aggregated together. | in a failure scenario, only the failed unit needs to be recovered. Also, there is high visibility into the logs and metrics for each unit. 
+
+## Best Practices For Application Deployment:
+### Health Checks
+  - Health checks are implemented to showcase the status of an application. These checks report if an application is running and meets the expected behavior to serve incoming traffic. 
+  - Usually, health checks are represented by an HTTP endpoint such as /healthz or /status. These endpoints return an HTTP response showcasing if the application is healthy or in an error state.
+  - /status health check that showcases that the application is healthy
+
+### Metrics
+  - Metrics are necessary to quantify the performance of the application. To fully understand how a service handles requests, it is mandatory to collect statistics on how the service operates. 
+  - For example, the number of active users, handled requests, or the number of logins. Additionally, it is paramount to gather statistics on resources that the application requires to be fully operational. For example, the amount of CPU, memory, and network throughput. 
+  - Usually, the collection of metrics are returned via an HTTP endpoint such as /metrics, which contains the internal metrics such as the number of active users, consumed CPU, network throughput, etc.
+  - /metrics endpoint that list of metrics counting the amount requests by the HTTP code returned
+
+### Logs
+  - Log aggregation provides valuable insights into what operations a service is performing at a point in time. It is the nucleus of any troubleshooting and debugging process. For example, it is essential to record if a user logged in successfully into a service, or encountered an error while performing a payment.
+  - Usually, the logs are collected from STDOUT (standard out) and STDERR (standard error) through a passive logging mechanism. This means that any output or errors from the application are sent to the shell. Subsequently, these are collected by a logging tool, such as Fluentd or Splunk, and stored in backend storage. 
+  - However, the application can send the logs directly to the backend storage. In this case, an active logging technique is used, as the log transmission is handled directly by the application, without a logging tool required.
+  - There are multiple logging levels that can be attributed to an operation. Some of the most widely used are:
+    - DEBUG - record fine-grained events of application processes
+    - INFO - provide coarse-grained information about an operation
+    - WARN - records a potential issue with the service
+    - ERROR - notifies an error has been encountered, however, the application is still running
+    - FATAL - represents a critical situation, when the application is not operational
+  - As well, it is common practice to associate each log line with a timestamp, that will exactly record when an operation was invoked.
+
+### Tracing
+  - Tracing is capable of creating a full picture of how different services are invoked to fulfill a single request. 
+  - Usually, tracing is integrated through a library at the application layer, where the developer can record when a particular service is invoked. 
+  - These records for individual services are defined as spans. A collection of spans define a trace that recreates the entire lifecycle of a request.
+
+### Resource Consumption
+  - Resource consumption encapsulates the resources an application requires to be fully operational. 
+  - This usually refers to the amount of CPU and memory that is consumed by an application during its execution. 
+  - Additionally, it is beneficial to benchmark the network throughput, or how many requests can an application handle concurrently. 
+  - Having awareness of resource boundaries is essential to ensure that the application is up and running 24/7.
+
+### 
+
+## For Quizzes check [here](https://github.com/sg7801/SUSE-Cloud-Native-Foundations-Scholarship/blob/main/Introduction%20to%20Cloud%20Native%20Fundamentals/Quizzes.md) 
