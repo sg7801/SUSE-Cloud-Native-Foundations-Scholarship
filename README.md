@@ -20,10 +20,10 @@ This repository contains the detailed explaination of the SUSE Cloud Native Foun
 5 | VirtualBox (6.1.16 or a higher version) | [![VirtualBoxBadge](https://img.shields.io/badge/VirtualBox-blue?style=for-the-badge&logo=virtualbox)](https://www.virtualbox.org/wiki/Downloads)
 
 # Want to Contribute?
-### Fork the repo and send PRs.
+#### Fork 🍴 the repository and send PRs.
  
-### Do :star: this repository to keep a track of the course. 
+#### Do :star: this repository to keep a track of the course. 
  
-### Made with :heart: by [Srishti Guleria](https://github.com/sg7801)
+#### Made with 💟 by [Srishti Guleria](https://github.com/sg7801)
  
  
