@@ -157,3 +157,5 @@ vagrant ssh
 - In this case, a subset or all control plane components are compromised. While the situation is disastrous, the applications are still running and handling traffic. The downside of the control plane failure is that no new workloads can be deployed and no changes can be applied to the existing workloads.
 
 The engineering team needs to recover the control plane components as a critical priority. However, they should not worry about recovering applications, as these will be intact and still handling requests.
+
+## For Quizzes check [here](https://github.com/sg7801/SUSE-Cloud-Native-Foundations-Scholarship/blob/main/Container%20Orchestration%20with%20Kubernetes/Quizzes.md)
