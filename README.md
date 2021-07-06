@@ -7,7 +7,7 @@ This repository contains the detailed explaination of the SUSE Cloud Native Foun
 | 1. |  [Introduction to cloud native fundamentals](https://github.com/sg7801/SUSE-Cloud-Native-Foundations-Scholarship/tree/main/Introduction%20to%20Cloud%20Native%20Fundamentals) |   
 |  2. |  [Architecture Consideration for Cloud Native Applications](https://github.com/sg7801/SUSE-Cloud-Native-Foundations-Scholarship/tree/main/Architecture%20Consideration%20for%20Cloud%20Native%20Applications) |   
 |  3. |  [Container Orchestration with Kubernetes](https://github.com/sg7801/SUSE-Cloud-Native-Foundations-Scholarship/tree/main/Container%20Orchestration%20with%20Kubernetes) |   
-|  4. | Open Source PaaS  |   
+|  4. | [Open Source PaaS](https://github.com/sg7801/SUSE-Cloud-Native-Foundations-Scholarship/tree/main/Open%20Source%20Paas)  |   
 |  5. |  CI/CD with Cloud Native Tooling  |   
 
 # Tools, Environment & Dependencies Checklist: 
