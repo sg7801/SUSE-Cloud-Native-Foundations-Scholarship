@@ -37,7 +37,7 @@ Overall, a delivery pipeline consists of two phases:
 - Continuous Integration (or CI) includes the build, test, and package stages.
 - Continuous Delivery (or CD) handles the deploy stage.
 
-Advantages of a CI/CD pipeline
+Advantages of a CI/CD pipeline:
   - Frequent releases - automation enables engineers to ship new code as soon as it's available and improves responsiveness to customer feedback.
   - Less risk - automation of releases eliminates the need for manual intervention and configuration.
   - Developer productivity - a structured release process allows every product to be released independently of other components
