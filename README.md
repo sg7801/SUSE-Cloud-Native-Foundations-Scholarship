@@ -24,6 +24,6 @@ This repository contains the detailed explaination of the SUSE Cloud Native Foun
  
 #### Do :star: this repository to keep a track of the course. 
  
-#### Made with 💟 by [Srishti Guleria](https://github.com/sg7801)
+#### Made with 💟 by [Srishti Guleria](https://github.com/sg7801). 
  
  
